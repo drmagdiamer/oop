@@ -26,6 +26,10 @@ public class MyApp
         s1.sayHello();
         p2.sayHello();
         s2.sayHello();
+
+        Professor pf = new Professor( );
+        pf.setName(" Amer ");
+        pf.sayHello();
     }
 }
 
