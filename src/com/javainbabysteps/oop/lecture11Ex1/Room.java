@@ -11,10 +11,11 @@ public abstract class Room {
 
     public Room() {
         this.reservationList = new ArrayList<>();
+        System.out.println("===> My Parent Constructor was called in Room ");
     }
 
     public Room(String code, int number, Hotel hotel) {
-        this();
+        this.reservationList = new ArrayList<>();
         this.code = code;
         this.number = number;
         this.hotel = hotel;

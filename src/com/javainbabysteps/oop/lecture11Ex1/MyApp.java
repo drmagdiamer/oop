@@ -10,7 +10,14 @@ public class MyApp {
         Facility f2 = new Facility("Home Theatre", "F002", "Home Theatre with seating for up to 8 people");
         SingleRoom s1 = new SingleRoom("S001", 101, h1);
         h1.addRoom(s1);
-        SingleRoom s2 = new SingleRoom("S002", 102, h1);
+        System.out.println("\n************************************\n");
+        System.out.println("Before of s2 creation");
+        SingleRoom s2 = new SingleRoom();
+        System.out.println("After of s2 creation");
+        System.out.println("\n************************************\n");
+        s2.setCode("S002");
+        s2.setNumber(102);
+        s2.setHotel(h1);
         h1.addRoom(s2);
         SingleRoom s3 = new SingleRoom("S003", 201, h1);
         h1.addRoom(s3);

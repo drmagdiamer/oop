@@ -7,6 +7,7 @@ public class Wing extends Room{
     private List<Facility> facilityList;
 
     public Wing() {
+        super();
         this.facilityList = new ArrayList<>();
     }
 
@@ -15,8 +16,16 @@ public class Wing extends Room{
         this.facilityList = new ArrayList<>();
     }
 
-    public void addFacility(Facility f){
-        this.facilityList.add(f);
+    public void addFacility(Facility facility){
+        this.facilityList.add(facility);
+    }
+
+    public List<Facility> getFacilityList() {
+        return facilityList;
+    }
+
+    public void setFacilityList(List<Facility> facilityList) {
+        this.facilityList = facilityList;
     }
 
     @Override

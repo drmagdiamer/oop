@@ -65,7 +65,8 @@ public class Facility {
         result += "\n, available in  "+this.availableInRooms.size()+" wing(s) ";
         for(int i=0; i< this.availableInRooms.size(); i++){
             result = result + "\n "+(i+1)+
-                    " wing in hotel "+(this.availableInRooms.get(i).getHotel()==null?" not set ":this.availableInRooms.get(i).getHotel())
+                    " wing in hotel "+
+                    (this.availableInRooms.get(i).getHotel()==null?" not set ":this.availableInRooms.get(i).getHotel().getName())
                     +"  wing number "+this.availableInRooms.get(i).getNumber();
         }
         result += '}';
